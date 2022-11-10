@@ -1,1 +1,5 @@
 package orm
+
+func NewDatabase() {
+
+}

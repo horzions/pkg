@@ -1,15 +1,15 @@
 package config
 
 import (
-	"fmt"
-
-	"github.com/horzions/pkg/app"
+	"github.com/horzions/pkg/database"
+	"github.com/horzions/pkg/serve"
 )
 
 type Config struct {
-	Port int `json:"port"`
+	Serve    *serve.Serve
+	Database *database.Database
 }
 
-func (c *Config) Load(a *app.App) {
-	fmt.Println("load config")
+func NewConfig() *Config {
+	return &Config{}
 }

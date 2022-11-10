@@ -1,4 +1,7 @@
 package serve
 
-type App struct {
+type Serve struct {
+	Port   string `yaml:"port"`
+	JwtKey string `yaml:"jwtKey"`
+	Salt   string `yaml:"salt"`
 }

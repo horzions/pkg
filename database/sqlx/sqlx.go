@@ -1,1 +1,5 @@
 package sqlx
+
+func NewDatabase() {
+
+}
